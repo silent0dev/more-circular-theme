@@ -151,10 +151,10 @@ body.sidebar-move .site-menu-handle {
 .no-touchevents #site-search-handle:hover rect {
   opacity: 0;
 }
-.no-touchevents #site-cart-handle:hover .cart-menu .count {
+/* .no-touchevents #site-cart-handle:hover .cart-menu .count {
   animation-name: scroll-in;
   animation-duration: 200ms;
-}
+} */
 .no-touchevents #site-menu-handle path {
   transition: transform 200ms linear;
 }

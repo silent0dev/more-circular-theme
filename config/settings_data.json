@@ -74,5 +74,45 @@
       "cart_image_border": "#d3dbe1"
     }
   },
-  "current": "Looker"
+  "current": {
+    "header_background": "#dfdfe3",
+    "header_borders_opacity": 18,
+    "main_background": "#dfdfe3",
+    "borders_opacity": 18,
+    "sidebar_background": "#dfdfe3",
+    "headings_font": "montserrat_n6",
+    "headings_hr": false,
+    "body_font": "montserrat_n5",
+    "buttons_radius": 30,
+    "product_card_aspect_ratio": "1",
+    "product_thumbnail_fit": false,
+    "proudct_card_aspect_ratio_padding": 0,
+    "product_card_background": "rgba(0,0,0,0)",
+    "product_show_secondary": false,
+    "product_animation": "three alt color--light",
+    "product_overlay_bg": "#222229",
+    "product_overlay_txt": "#ffffff",
+    "reviews_badge_desktop": "no",
+    "product_card_badge_regular_background_color": "#000000",
+    "product_card_badge_regular_text_color": "#ffffff",
+    "product_card_badge_regular_border_color": "rgba(0,0,0,0)",
+    "product_card_badge_sale_type": "amount",
+    "product_card_badge_sale_color": "#8b6607",
+    "product_card_badge_sale_text_color": "#f6efe1",
+    "cart_action": "overlay",
+    "cart_notes_enable": true,
+    "cart_image_ratio": "1",
+    "cart_image_border": "#dcdbe4",
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "11532412952436166569": {
+        "type": "shopify://apps/loox-reviews/blocks/loox-inject/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
+  }
 }

@@ -100,6 +100,28 @@ data-sticky="{{ section.settings.menu_sticky }}">
       </noscript>
     {%- endif -%}
 
+    {% if shop.customer_accounts_enabled %}
+      <span 
+        class="login site-menu-handle" 
+        title="{% if customer %}{{ 'general.navigation.account' | t }}{% else %}{{ 'general.navigation.login' | t }}{% endif %}"
+        id="site-login-handle" aria-expanded="false" aria-controls="site-login" 
+        data-js-sidebar-handle
+      >
+        <span class="visually-hidden">
+          {% if customer %}
+            {{ 'general.navigation.account' | t }}
+          {% else %}
+            {{ 'general.navigation.login' | t }}
+          {% endif %}
+        </span>
+        <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}" title="{% if customer %}{{ 'general.navigation.account' | t }}{% else %}{{ 'general.navigation.login' | t }}{% endif %}">
+          <span class="account-menu" aria-hidden="true">
+            {%- render 'theme-symbols', icon: 'account' -%}
+          </span>
+        </a>
+      </span>
+    {% endif %}
+
     <span 
       class="site-search-handle site-menu-handle" 
       title="{{ 'general.accessibility_labels.open_search' | t }}"
