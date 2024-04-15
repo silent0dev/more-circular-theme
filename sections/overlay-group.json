@@ -1,0 +1,20 @@
+{
+  "type": "custom.overlay",
+  "name": "t:sections.refactor_words.labels.overlay_group",
+  "sections": {
+    "popup": {
+      "type": "popup",
+      "settings": {
+      }
+    },
+    "cookie": {
+      "type": "cookie",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "popup",
+    "cookie"
+  ]
+}
