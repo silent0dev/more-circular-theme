@@ -15,6 +15,20 @@ split-screen-slider .box__heading {
   border-bottom: none !important;
   z-index: 9;
 }
+@media (min-width: 768px) {
+  split-screen-slider .box__heading .tagline {
+    color: #2D2D2D;
+    font-size: 20px;
+  }
+  split-screen-slider .box__heading .title {
+    font-size: 60px;
+    letter-spacing: -3px;
+  }
+  split-screen-slider .box__heading .subtitle {
+    font-size: 24px;
+    color: #2D2D2D;
+  }
+}
 split-screen-slider .box__heading .title + .button {
   margin-top: var(--button-extra-margin);
 }

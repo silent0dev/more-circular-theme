@@ -150,8 +150,8 @@ summary::-webkit-details-marker {
   --sidebar-movement: 480px;
   --text-spacing: 30px;
   --alternate-opacity: .58;
-  --button-size: 54px;
-  --button-padding: 30px;
+  --button-size: 48px;
+  --button-padding: 11px 22px;
   --button-extra-margin: 5px;
 }
 
@@ -188,7 +188,7 @@ summary::-webkit-details-marker {
     --header-padding: 15px;
     --header-size: 73px;
     --button-size: 44px;
-    --button-padding: 22px;
+    --button-padding: 10px 22px;
     --button-extra-margin: 2px;
   }
 }
@@ -668,12 +668,12 @@ input[type=submit], .button, .btn {
   font-family: var(--font-stack-body);
   font-weight: var(--font-weight-body);
   font-style: var(--font-style-body);
-  font-size: calc(13px / 16 * var(--base-body-size) + 0px);
+  font-size: 20px;
   border: 2px solid transparent;
   font-weight: var(--font-weight-body-bold);
   color: var(--main-text);
-  text-transform: uppercase;
-  padding: 0 var(--button-padding);
+  text-transform: none;
+  padding: var(--button-padding);
   position: relative;
   top: -1px;
   transition: all 150ms linear;
@@ -681,7 +681,7 @@ input[type=submit], .button, .btn {
   height: var(--button-size);
   margin: 0;
   display: inline-block;
-  line-height: calc(var(--button-size) - 2px);
+  line-height: 1;
   border-radius: 0;
   -webkit-appearance: none;
 }
@@ -1789,12 +1789,12 @@ html[dir=ltr] .site-box.box--text-align-left {
   padding-inline-end: var(--box-big-padding);
 }
 .box__heading.box--typo-big .title:not(:last-child) {
-  margin-bottom: var(--text-spacing);
+  margin-bottom: 16px;
 }
 .box__heading.box--typo-big .subtitle:not(:last-child),
 .box__heading.box--typo-big .tagline:not(:last-child) {
   display: block;
-  margin-bottom: var(--text-spacing);
+  margin-bottom: 13px;
 }
 .box__heading .button:not(:first-child) {
   margin-top: 5px;

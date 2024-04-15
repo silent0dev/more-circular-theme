@@ -6,21 +6,25 @@
         "1637249880c19b891c-2": {
           "type": "slide",
           "settings": {
-            "tagline": "Introducing",
-            "title": "Our brand new store",
-            "subtitle": "Showcase your best products",
-            "button_label": "Explore all",
-            "button_link": ""
+            "tagline": "Just Arrived",
+            "title": "Artisan Eco  Lights / Handmade  in Belgium",
+            "subtitle": "",
+            "button_label": "Explore All",
+            "button_link": "#",
+            "image": "shopify://shop_images/slideshow-1.png",
+            "seo_h_tag": "h1"
           }
         },
         "1637249880c19b891c-0": {
           "type": "slide",
           "settings": {
-            "tagline": "Why not",
-            "title": "Write about yourself",
-            "subtitle": "Include some awesome images",
-            "button_label": "Learn more",
-            "button_link": "shopify://collections/new-os2-0"
+            "tagline": "",
+            "title": "Rail Sets",
+            "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
+            "button_label": "Explore All",
+            "button_link": "#",
+            "image": "shopify://shop_images/slideshow-2.png",
+            "seo_h_tag": "h1"
           }
         },
         "1637249880c19b891c-1": {
@@ -29,8 +33,10 @@
             "tagline": "Take the opportunity to",
             "title": "Promot your products",
             "subtitle": "Include various promotions and flash sales",
-            "button_label": "Shop now",
-            "button_link": ""
+            "button_label": "Explore All",
+            "button_link": "#",
+            "image": "shopify://shop_images/slideshow-3.png",
+            "seo_h_tag": "h1"
           }
         }
       },
@@ -58,7 +64,8 @@
         "subtitle": "Shop Now",
         "collection": "",
         "collection_rows": 3,
-        "show_view_all": true
+        "show_view_all": true,
+        "seo_h_tag": "h2"
       }
     },
     "1637571021f6bdff72": {
@@ -68,7 +75,8 @@
           "type": "heading",
           "settings": {
             "heading": "Talk about your brand",
-            "heading_size": "h2"
+            "heading_size": "h2",
+            "seo_h_tag": "h2"
           }
         },
         "1637571020263843ae-1": {
@@ -107,7 +115,8 @@
             "button_label": "Explore",
             "url": "",
             "custom_text": "rgba(0,0,0,0)",
-            "custom_overlay": "rgba(0,0,0,0)"
+            "custom_overlay": "rgba(0,0,0,0)",
+            "seo_h_tag": "h2"
           }
         },
         "16361066840a222f4b-1": {
@@ -118,7 +127,8 @@
             "button_label": "Explore",
             "url": "",
             "custom_text": "rgba(0,0,0,0)",
-            "custom_overlay": "rgba(0,0,0,0)"
+            "custom_overlay": "rgba(0,0,0,0)",
+            "seo_h_tag": "h2"
           }
         }
       },
@@ -138,7 +148,8 @@
           "type": "heading",
           "settings": {
             "heading": "Talk about your brand",
-            "heading_size": "h2"
+            "heading_size": "h2",
+            "seo_h_tag": "span"
           }
         }
       },
@@ -159,7 +170,8 @@
           "type": "heading",
           "settings": {
             "heading": "Shop The Look",
-            "heading_size": "h2"
+            "heading_size": "h2",
+            "seo_h_tag": "h2"
           }
         },
         "1636106679435e5a7a-1": {
@@ -207,6 +219,7 @@
         "81c90af3-854f-48fc-944e-353cb3bf4fbb"
       ],
       "settings": {
+        "desktop_image_positioning": "image-on-left"
       }
     },
     "1636106675d59d7642": {
@@ -215,7 +228,8 @@
         "1636106675d59d7642-0": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand"
+            "heading": "Talk about your brand",
+            "seo_h_tag": "h3"
           }
         },
         "1636106675d59d7642-1": {
@@ -236,7 +250,8 @@
         "desktop_image_positioning": "image-on-left",
         "bg_overlay": false,
         "custom_background": "#1c1c1c",
-        "custom_text": "#f3f3f3"
+        "custom_text": "#f3f3f3",
+        "seo_h_tag": "h2"
       }
     },
     "1636106673daa45393": {
@@ -287,7 +302,8 @@
         "show_avatars": true,
         "custom_background": "#212121",
         "custom_text": "#efefef",
-        "mobile_layout": true
+        "mobile_layout": true,
+        "seo_h_tag": "h2"
       }
     },
     "1637572030c4b90431": {
@@ -296,7 +312,8 @@
         "title": "Featured collection",
         "collection": "",
         "products_per_page": 4,
-        "show_view_all": true
+        "show_view_all": true,
+        "seo_h_tag": "h2"
       }
     },
     "163757206347de448b": {
@@ -325,7 +342,8 @@
         "post_limit": 4,
         "show_view_all": true,
         "custom_text": "#ffffff",
-        "custom_overlay": "#000000"
+        "custom_overlay": "#000000",
+        "seo_h_tag": "h2"
       }
     },
     "16377493211fd93093": {
@@ -339,21 +357,25 @@
             "show_reviews": true,
             "show_tax_info": false,
             "show_sku": false,
-            "show_barcode": false
+            "show_barcode": false,
+            "stick_product_header_on_mobile": true
           }
         },
         "1637749321a1e63c4d-1": {
           "type": "variant_picker",
           "settings": {
             "variants_style": "radio",
-            "show_color_swatches": true
+            "show_color_swatches": true,
+            "unavailable_variants": "show"
           }
         },
         "1637749321a1e63c4d-2": {
           "type": "buy_buttons",
           "settings": {
             "show_quantity_selector": true,
-            "show_dynamic_checkout": true
+            "show_preorder": false,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
           }
         },
         "1637749321a1e63c4d-3": {
@@ -397,7 +419,8 @@
           "type": "heading",
           "settings": {
             "heading": "Sales Promotions",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "seo_h_tag": "h2"
           }
         },
         "1637674728a99cfc06-2": {
@@ -463,7 +486,8 @@
         "text_alignment": "horizontal-left vertical-bottom",
         "custom_background": "#eeeeef",
         "custom_text": "rgba(0,0,0,0)",
-        "bg_overlay": false
+        "bg_overlay": false,
+        "seo_h_tag": "h2"
       }
     },
     "163825849356f88edc": {

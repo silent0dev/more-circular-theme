@@ -83,6 +83,7 @@
     "headings_font": "dm_sans_n7",
     "headings_hr": false,
     "body_font": "dm_sans_n4",
+    "body_size": 15,
     "buttons_radius": 30,
     "product_card_aspect_ratio": "1",
     "product_thumbnail_fit": false,
