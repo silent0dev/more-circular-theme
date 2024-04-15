@@ -377,7 +377,8 @@ html[dir=ltr] #site-search .preloader p {
 }
 .cart-menu .count-holder {
   position: absolute;
-  top: 6px;
+  top: 1px;
+  left: 15px !important;
   width: 100%;
   text-align: center;
   line-height: 1;
@@ -506,6 +507,7 @@ html[dir=ltr] .skip-to-content:focus {
 .site-nav.style--classic {
   display: flex;
   margin-inline-end: -10px;
+  align-items: center;
 }
 @media screen and (max-width: 1024px) {
   .site-nav.style--classic {
@@ -533,11 +535,11 @@ html[dir=ltr] .skip-to-content:focus {
 }
 .site-nav.style--classic .menu-link {
   line-height: 1;
-  color: var(--header-text);
+  color: #2d2d2d;
   position: relative;
   padding: 15px 20px;
   z-index: 9;
-  font-size: calc(14px / 16 * var(--base-body-size) + 0px);
+  font-size: 15px;
 }
 .site-nav.style--classic .submenu {
   background: transparent;
@@ -794,6 +796,10 @@ html[dir=ltr] .site-nav.style--classic .submenu.normal-menu .babymenu {
 }
 .site-nav a {
   color: var(--header-text);
+}
+.site-menu-handle a {
+  line-height: 0;
+  height: auto;
 }
 .site-nav form[role=search] {
   position: relative;
