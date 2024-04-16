@@ -2655,10 +2655,6 @@ html[dir=rtl] .alert--success {
   margin: auto;
 }
 
-.video-popup__play svg * {
-  fill: var(--main-text);
-}
-
 .no-touchevents .video-popup__link:hover .video-popup__play svg {
   transform: scale(1.05);
 }

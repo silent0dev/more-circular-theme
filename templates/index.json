@@ -442,11 +442,63 @@
         "info_kwWEjG"
       ],
       "settings": {
-        "title": "Contact",
-        "content": "<p>123 Fake St.<br/>Vancouver, Canada</p><p>Mon - Fri, 10am - 9pm<br/>Saturday, 11am - 4pm<br/>Sunday, CLOSED</p>",
         "map_address": "Jagershoek 5, 2970 Schilde",
         "map_api": "",
         "map_style": "light",
+        "seo_h_tag": "h1"
+      }
+    },
+    "scrolling_text_with_image_hmXUzR": {
+      "type": "scrolling-text-with-image",
+      "blocks": {
+        "item_fGjYn8": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Urban_mining.png",
+            "caption": "Step 1",
+            "title": "Urban mining",
+            "text": "<p>We collect the raw “waste” plaster from local construction sites, rescuing the material from ending at a landfill. In 2021 we collected 2.000kg of plaster from construction sites.</p>"
+          }
+        },
+        "item_iMxFFW": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Upcycling_plaster.png",
+            "caption": "Step 2",
+            "title": "Upcycling plaster",
+            "text": "<p>In our small manufactory we process the collected plaster using an innovative process utilizing pressure. This makes the material reusable and we form it into the Archy light pendeants.</p>"
+          }
+        },
+        "item_E3LHnN": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/local_manufacture_assembly.png",
+            "caption": "Step 3",
+            "title": "local manufacture & assembly",
+            "text": "<p>Our manufacturing team will spend up to three days finishing your set by hand. At this stage, we customize your order so it hangs at the right height and space between the lights. Each set of lights it’s truly unique.</p>"
+          }
+        },
+        "item_9GjNHz": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Recyclable_packaging.png",
+            "caption": "Step 4",
+            "title": "Recyclable packaging",
+            "text": "<p>All our set of lights are securely shipped in a box using recyclable materials only. Each box is packed carefully and includes a step-by-step installation guide. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_fGjYn8",
+        "item_iMxFFW",
+        "item_E3LHnN",
+        "item_9GjNHz"
+      ],
+      "settings": {
+        "title": "Sustainability Highlight",
+        "subtitle": "Circularity",
+        "custom_background": "rgba(0,0,0,0)",
+        "custom_text": "rgba(0,0,0,0)",
         "seo_h_tag": "h1"
       }
     }
@@ -463,6 +515,7 @@
     "testimonials_UAzaBL",
     "video_popup_JDcFMV",
     "newsletter_LUFGwd",
-    "map_WJMeGt"
+    "map_WJMeGt",
+    "scrolling_text_with_image_hmXUzR"
   ]
 }
