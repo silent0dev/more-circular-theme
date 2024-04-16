@@ -3,7 +3,15 @@
     padding-bottom: 30px;
     min-height: auto !important;
 }
-
+.heading-site-box.no-blocks .box--small-fl-auto {
+    min-height: auto !important;
+    padding: 65px 0;
+}
+@media (max-width: 768px) {
+    .heading-site-box.no-blocks .box--small-fl-auto {
+        padding: 30px 0;
+    }
+}
 @media (min-width: 769px) {
     .title.h1 {
         font-size: 60px;

@@ -1,6 +1,6 @@
 {%- render 'custom-colors', id: section.id, background: section.settings.custom_background, text: section.settings.custom_text -%}
 
-<div id="section-{{ section.id }}" class="site-box-container container--fullscreen heading-site-box {% if section.blocks.size == 1 and section.blocks[0].type == 'heading' %}only-has-heading{% endif %}">
+<div id="section-{{ section.id }}" class="site-box-container container--fullscreen heading-site-box {% if section.blocks.size == 1 and section.blocks[0].type == 'heading' %}only-has-heading{% elsif section.blocks.size == 0 %}no-blocks{% endif %}">
 
   <div id="block-{{ section.id }}" class="site-box box--small-fl-auto lap--box--small-fl box__announcement box--typo-big box--center-align box--text-align-{{ section.settings.text_alignment }} box--column-flow" data-order="0" style="min-height:var(--box-min-height)">
 

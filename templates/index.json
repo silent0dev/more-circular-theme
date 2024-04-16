@@ -217,6 +217,14 @@
         "pause_on_hover": true
       }
     },
+    "heading_6AWPXH": {
+      "type": "heading",
+      "settings": {
+        "text_alignment": "center",
+        "custom_background": "rgba(0,0,0,0)",
+        "custom_text": "rgba(0,0,0,0)"
+      }
+    },
     "heading_Vtj9Tb": {
       "type": "heading",
       "blocks": {
@@ -273,17 +281,37 @@
             "select_icon": "store",
             "custom_icon": "shopify://shop_images/try-it-for-100days.png"
           }
+        },
+        "text_icon_tdRq7c": {
+          "type": "text-icon",
+          "settings": {
+            "title": "Easy Installation",
+            "body": "<p>Each set comes assembled and installation is easy with the provided instructions.</p>",
+            "label": "",
+            "link": "",
+            "select_icon": "earth-globe",
+            "custom_icon": "shopify://shop_images/easy-installation.png"
+          }
         }
       },
       "block_order": [
         "text_icon_tHzmTd",
         "text_icon_aMRLjk",
-        "text_icon_fz38Yy"
+        "text_icon_fz38Yy",
+        "text_icon_tdRq7c"
       ],
       "settings": {
         "custom_background": "#222326",
         "custom_text": "#ffffff",
         "seo_h_tag": "h3"
+      }
+    },
+    "heading_arGm7A": {
+      "type": "heading",
+      "settings": {
+        "text_alignment": "center",
+        "custom_background": "rgba(0,0,0,0)",
+        "custom_text": "rgba(0,0,0,0)"
       }
     }
   },
@@ -292,7 +320,9 @@
     "faq_kYpKfT",
     "heading_ytJmKC",
     "scrolling_images_iEQh7g",
+    "heading_6AWPXH",
     "heading_Vtj9Tb",
-    "text_columns_with_icons_DyUiyb"
+    "text_columns_with_icons_DyUiyb",
+    "heading_arGm7A"
   ]
 }
