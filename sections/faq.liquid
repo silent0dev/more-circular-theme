@@ -1,24 +1,17 @@
 {%- render 'custom-colors', id: section.id, background: section.settings.custom_background, text: section.settings.custom_text -%}
 
-<div id="section-{{ section.id }}" class="site-box-container container--fullscreen box--can-stick">
-
-  <div class="site-box box--big lap--box--small-fl-auto box__heading box--typo-big box--center-align box--top-align-if-first box--column-flow" data-order="0">
-    <div class="reduce-top-margin-if-first">
-      <div class="site-box-content">
-        <div class="content">
-          {%- unless section.settings.title == blank -%}
-            <{{ section.settings.seo_h_tag }} class="title h1">{{ section.settings.title | escape }}</{{ section.settings.seo_h_tag }}>
-          {%- endunless -%}
-          {%- if settings.headings_hr -%} <hr /> {%- endif -%}
-        </div>
-      </div>
+<div id="section-{{ section.id }}" class="site-box-container container--fullscreen box--can-stick faq-box">
+  <div class="faq-header">
+    <div class="content">
+      {%- unless section.settings.title == blank -%}
+        <{{ section.settings.seo_h_tag }} class="title h1">{{ section.settings.title | escape }}</{{ section.settings.seo_h_tag }}>
+      {%- endunless -%}
     </div>
   </div>
-
   <div class="site-box box--big lap--box--bigger box__text box--typo-big box--center-align box--top-align-if-first box--column-flow" data-order="1">
-
-    <div class="site-box-content reduce-top-margin-if-first">
-      <div>
+    
+    <div class="site-box-content reduce-top-margin-if-first faq-content">
+      <div class="faq-body">
 
       {%- for block in section.blocks -%}
 
@@ -50,6 +43,11 @@
     </div>
 
   </div>
+  <div class="site-box vertical-top box--big lap--box--small-fl-auto box__heading box--typo-big box--center-align box--top-align-if-first box--column-flow" data-order="0">
+    <div class="faq-image">
+      {{ section.settings.image | img_url: '475x' | img_tag }}
+    </div>
+  </div>
 
   <script src="{{ 'component-toggle.js' | asset_url }}" defer></script>
 
@@ -72,6 +70,11 @@
 				"id": "open_first",
 				"label": "t:sections.faq.settings.open_first.label"
 			},
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
       {
         "type": "header",
         "content": "t:sections.split-extra-words.settings_schema.colors.headings.custom_colors"

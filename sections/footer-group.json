@@ -8,19 +8,31 @@
         "icon-1": {
           "type": "text-icon",
           "settings": {
-            "title": "Shipping"
+            "title": "Shipping",
+            "body": "<p>Share some useful information about shipping, returns or discounts.</p>",
+            "label": "",
+            "link": "",
+            "select_icon": "earth-globe"
           }
         },
         "icon-2": {
           "type": "text-icon",
           "settings": {
-            "title": "Returns"
+            "title": "Returns",
+            "body": "<p>Share some useful information about shipping, returns or discounts.</p>",
+            "label": "",
+            "link": "",
+            "select_icon": "earth-globe"
           }
         },
         "icon-3": {
           "type": "text-icon",
           "settings": {
-            "title": "Pickup"
+            "title": "Pickup",
+            "body": "<p>Share some useful information about shipping, returns or discounts.</p>",
+            "label": "",
+            "link": "",
+            "select_icon": "earth-globe"
           }
         }
       },
@@ -30,41 +42,9 @@
         "icon-3"
       ],
       "settings": {
-      }
-    },
-    "footer": {
-      "type": "footer",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-          }
-        },
-        "menu-1": {
-          "type": "menu",
-          "settings": {
-            "title": "Quick links"
-          }
-        },
-        "menu-2": {
-          "type": "menu",
-          "settings": {
-            "title": "Quick links"
-          }
-        },
-        "social": {
-          "type": "social",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "text",
-        "menu-1",
-        "menu-2",
-        "social"
-      ],
-      "settings": {
+        "custom_background": "rgba(0,0,0,0)",
+        "custom_text": "rgba(0,0,0,0)",
+        "seo_h_tag": "h3"
       }
     },
     "newsletter": {
@@ -73,6 +53,8 @@
         "heading": {
           "type": "heading",
           "settings": {
+            "heading": "Subscribe to our newsletter",
+            "seo_h_tag": "h2"
           }
         },
         "email_form": {
@@ -83,6 +65,7 @@
         "paragraph": {
           "type": "paragraph",
           "settings": {
+            "paragraph": "<p>Be the first to know about new collections and exclusive offers.</p>"
           }
         }
       },
@@ -92,6 +75,56 @@
         "paragraph"
       ],
       "settings": {
+        "custom_background": "rgba(0,0,0,0)",
+        "custom_text": "rgba(0,0,0,0)"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "title": "Contact information",
+            "content": "<p>Write a short statement about your brand.</p>",
+            "size": "text-size--large"
+          }
+        },
+        "menu-1": {
+          "type": "menu",
+          "settings": {
+            "title": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "menu-2": {
+          "type": "menu",
+          "settings": {
+            "title": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "social": {
+          "type": "social",
+          "settings": {
+            "title": "Follow us"
+          }
+        }
+      },
+      "block_order": [
+        "text",
+        "menu-1",
+        "menu-2",
+        "social"
+      ],
+      "settings": {
+        "show_payment_icons": true,
+        "show_locale_selector": true,
+        "show_country_selector": true,
+        "enable_follow_on_shop": true,
+        "custom_background": "rgba(0,0,0,0)",
+        "custom_text": "rgba(0,0,0,0)",
+        "seo_h_tag": "h4"
       }
     }
   },

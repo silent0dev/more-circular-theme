@@ -1443,9 +1443,10 @@ html[dir=ltr] .site-nav .to-bottom-content {
 
 toggle-tab {
   display: block;
+  border-top: 1px solid #bbbbbb;
 }
-toggle-tab + toggle-tab {
-  border-top: 1px solid var(--main-borders);
+toggle-tab:last-of-type {
+  border-bottom: 1px solid #bbbbbb;
 }
 .box__product-content .site-box-content toggle-tab + toggle-tab {
   margin-top: -3em;
@@ -1454,12 +1455,20 @@ toggle-tab + toggle-tab {
 .toggle__title {
   width: 100%;
   position: relative;
-  padding: 15px 0;
+  padding: 38px 50px;
   cursor: pointer;
   transition: all 100ms linear;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+@media (max-width: 768px) {
+  .toggle__title {
+    padding: 20px 25px;
+  }
 }
 .toggle__title .symbol {
   flex-shrink: 0;
@@ -1477,7 +1486,7 @@ toggle-tab + toggle-tab {
 toggle-tab.opened .toggle__title {
   cursor: pointer;
   pointer-events: all;
-  font-weight: var(--font-weight-body-bold);
+  padding-bottom: 20px;
 }
 toggle-tab.opened .toggle__title .symbol--plus {
   display: none;
@@ -1489,8 +1498,22 @@ toggle-tab.opened .toggle__title .symbol--minus {
   margin-bottom: 0;
 }
 .toggle__title + .toggle__content {
-  padding-bottom: 24px;
+  padding: 0 50px 38px;
   display: none;
+  font-size: 22px;
+}
+@media (max-width: 768px) {
+  .toggle__title {
+    font-size: 22px;
+  }
+
+  .toggle__title + .toggle__content {
+    padding: 0 25px 20px;
+    font: inherit;
+  }
+}
+.faq-body {
+  background-color: rgba(132,132,132, 0.1);
 }
 .toggle__title + .toggle__content > *:last-child {
   margin-bottom: 0;
@@ -1577,6 +1600,12 @@ html[dir=rtl] .site-box:after {
 }
 html[dir=ltr] .site-box:after {
   right: 0;
+}
+.faq-box .site-box::before {
+  height: 2px;
+}
+.faq-box .site-box:after {
+  display: none;
 }
 .site-box.box--no-padding .site-box-content {
   width: 100%;
@@ -1855,6 +1884,38 @@ html[dir=ltr] .site-box.box--text-align-left {
 ==================================================*/
 .box__text .site-box-content {
   padding: var(--box-auto-top) var(--box-smaller-padding);
+}
+
+.faq-header .title {
+  color: #000;
+  margin-bottom: 0;
+}
+.faq-header {
+  padding: var(--box-auto-top) var(--box-smaller-padding);
+}
+@media (min-width: 768px) {
+  .faq-header .title {
+    letter-spacing: -5px;
+    position: relative;
+    display: inline-block;
+  }
+  .faq-header .title::before {
+    content: "";
+    width: calc(100% + var(--box-smaller-padding));
+    background: var(--main-background);
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    height: 5px;
+    z-index: 99;
+  }
+  .faq-header {
+    padding-top: 140px;
+    padding-bottom: 0;
+  }
+  .faq-box .faq-content {
+    padding-top: 0;
+  }
 }
 .box__text .rte + .heading {
   margin-top: 1em;

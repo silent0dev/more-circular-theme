@@ -57,15 +57,50 @@
         "heading_size": "h1"
       }
     },
-    "16372293330d0f5bf6": {
-      "type": "featured-collection",
+    "faq_kYpKfT": {
+      "type": "faq",
+      "blocks": {
+        "text_q3Tf9k": {
+          "type": "text",
+          "settings": {
+            "title": "Handmade in Belgium",
+            "body": "<p>Every Archy is carefully crafted by hand with love and care in our atelier in Antwerp.</p>"
+          }
+        },
+        "text_L9aTWB": {
+          "type": "text",
+          "settings": {
+            "title": "Circular",
+            "body": "<p>Let your customers know if you offer free delivery for certain types of orders</p><p>Link to your <a href=\"#\">offers page</a>.</p>"
+          }
+        },
+        "text_6EGHid": {
+          "type": "text",
+          "settings": {
+            "title": "Build to last",
+            "body": "<p>Show customers how much time they have for testing your products</p><p>Link to your <a href=\"#\">returns policy</a>.</p>"
+          }
+        },
+        "text_9aiPi4": {
+          "type": "text",
+          "settings": {
+            "title": "Customised to your needs",
+            "body": "<p>Write a complete answer to the most frequent questions that your customers might have, such as important product information, shipping policies, payment issues or returns.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_q3Tf9k",
+        "text_L9aTWB",
+        "text_6EGHid",
+        "text_9aiPi4"
+      ],
       "settings": {
-        "title": "Bestsellers",
-        "subtitle": "Shop Now",
-        "collection": "",
-        "collection_rows": 3,
-        "show_view_all": true,
-        "seo_h_tag": "h2"
+        "title": "Lighting Highlights",
+        "open_first": true,
+        "custom_background": "rgba(0,0,0,0)",
+        "custom_text": "#2d2d2d",
+        "seo_h_tag": "h1"
       }
     },
     "1637571021f6bdff72": {
@@ -527,7 +562,7 @@
   },
   "order": [
     "16372498804121dda9",
-    "16372293330d0f5bf6",
+    "faq_kYpKfT",
     "1637571021f6bdff72",
     "16361066840a222f4b",
     "1636443645b6d4e74b",
