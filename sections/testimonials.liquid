@@ -6,14 +6,16 @@
   {% if section.settings.mobile_layout %} data-mobile-slider {% endif %}
 >
   
-  <div class="site-box box--big lap--box--small-fl-auto box--typo-big box--center-align box--top-align-if-first box--column-flow box__heading" data-order="0">
-    <div class="site-box-content reduce-top-margin-if-first">
+  <div class="site-box box--big lap--box--small-fl-auto box--typo-big box--top-align box--top-align-if-first box--column-flow box__heading" data-order="0">
+    {% if section.settings.image != blank %}
+      {{ section.settings.image | image_url: width: section.settings.image.width | image_tag: class: 'testimonial-image element--hide-on-small' }}
+    {% endif %}
+    <div class="site-box-content reduce-top-margin-if-first testimonial-site-box-content">
       <div>
-      
-        <{{ section.settings.seo_h_tag }} class="title h1">{{ section.settings.title | escape }}</{{ section.settings.seo_h_tag }}>
         {%- unless section.settings.subtitle == blank -%}
           <span class="subtitle">{{ section.settings.subtitle | escape }}</span>
         {%- endunless -%}
+        <{{ section.settings.seo_h_tag }} class="title h1">{{ section.settings.title | escape }}</{{ section.settings.seo_h_tag }}>
         {%- if settings.headings_hr -%} <hr /> {%- endif -%}
       
       </div>
@@ -50,40 +52,41 @@
 
             <div class="site-box-content">
 
-              {%- if section.settings.show_avatars -%}
-                <div class="avatar" aria-hidden="true">
-                  {%- unless block.settings.quote_avatar == blank -%}
-                   <img 
-                      src="{{ block.settings.quote_avatar | image_url: width: 70, height: 70, crop: 'center' }}" 
-                      srcset="{{ block.settings.quote_avatar | image_url: width: 70, height: 70, crop: 'center' }} 70w, {{ block.settings.quote_avatar | image_url: width: 140, height: 140, crop: 'center' }} 140w"
-                      width="70" height="70"
-                      sizes="70px" 
-                      loading="lazy" 
-                      alt="{{ block.settings.quote_avatar.alt | escape }}"
-                      onload="this.classList.add('lazyloaded')"
-                    />
-                  {%- elsif block.settings.quote_author != blank -%} 
-                    <span>{{ block.settings.quote_author | slice: 0 | capitalize }}
-                  {%- endunless -%}
-                </div>
-              {%- endif -%}
+              <div class="box__testimonial-header">
+                {%- if section.settings.show_avatars -%}
+                  <div class="avatar" aria-hidden="true">
+                    {%- unless block.settings.quote_avatar == blank -%}
+                     <img 
+                        src="{{ block.settings.quote_avatar | image_url: width: 70, height: 70, crop: 'center' }}" 
+                        srcset="{{ block.settings.quote_avatar | image_url: width: 70, height: 70, crop: 'center' }} 70w, {{ block.settings.quote_avatar | image_url: width: 140, height: 140, crop: 'center' }} 140w"
+                        width="70" height="70"
+                        sizes="70px" 
+                        loading="lazy" 
+                        alt="{{ block.settings.quote_avatar.alt | escape }}"
+                        onload="this.classList.add('lazyloaded')"
+                      />
+                    {%- elsif block.settings.quote_author != blank -%} 
+                      <span>{{ block.settings.quote_author | slice: 0 | capitalize }}
+                    {%- endunless -%}
+                  </div>
+                {%- endif -%}
+                {%- if block.settings.quote_author != blank or block.settings.quote_caption != blank -%}
+                  <span class="cite text-size--smaller">
+                    {%- liquid
+                      if block.settings.quote_author != blank 
+                        echo block.settings.quote_author | escape
+                      endif
+                    -%}
+                    {%- if block.settings.quote_caption != blank -%}
+                      <span>{{ block.settings.quote_caption | escape }}</span>
+                    {%- endif -%}
+                  </span>
+                {%- endif -%}
+              </div>
 
               <blockquote class="blockquote rte text-size--large">
                 {{ block.settings.quote_content }}
               </blockquote>
-
-              {%- if block.settings.quote_author != blank or block.settings.quote_caption != blank -%}
-                <span class="cite text-size--smaller">
-                  {%- liquid
-                    if block.settings.quote_author != blank 
-                      echo block.settings.quote_author | escape
-                    endif
-                  -%}
-                  {%- if block.settings.quote_caption != blank -%}
-                    <span>{{ block.settings.quote_caption | escape }}</span>
-                  {%- endif -%}
-                </span>
-              {%- endif -%}
 
             </div>
 
@@ -118,6 +121,11 @@
         "id": "subtitle",
         "label": "t:sections.split-extra-words.settings_schema.headings.subtitle",
         "default": "Share your client's stories"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
       },
       {
         "type": "checkbox",

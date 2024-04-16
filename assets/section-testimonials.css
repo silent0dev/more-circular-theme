@@ -26,7 +26,6 @@ html[dir=ltr] .box__testimonial {
   width: 70px;
   height: 70px;
   border-radius: 100%;
-  margin-bottom: 40px;
   position: relative;
   background: var(--main-borders);
 }

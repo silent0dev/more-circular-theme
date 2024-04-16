@@ -17,4 +17,46 @@
         font-size: 60px;
         letter-spacing: -2.5px;
     }
+    .subtitle {
+        font-size: 24px;
+        color: #2d2d2d;
+    }
+}
+.box__testimonial-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+@media (min-width: 769px) {
+    .box__testimonial-header .cite {
+        font-size: 24px;
+        text-align: right;
+        color: #2d2d2d;
+    }
+
+    .box__testimonial-header .cite span {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    .box__testimonial .text-size--large  {
+        font-size: 24px;
+        color: #2d2d2d;
+    }
+
+    .box__testimonial .blockquote {
+        margin-top: 30px;
+    }
+}
+
+.testimonial-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@media (min-width: 769px) {
+    .testimonial-site-box-content {
+        padding-top: 70px;
+    }
 }
