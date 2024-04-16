@@ -163,13 +163,53 @@
             "link": "",
             "open_in_new_tab": false
           }
+        },
+        "image_XpMxij": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/architectural-digest.png",
+            "image_padding": 80,
+            "link": "",
+            "open_in_new_tab": false
+          }
+        },
+        "image_qVPNBL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/devolkskrant.png",
+            "image_padding": 70,
+            "link": "",
+            "open_in_new_tab": false
+          }
+        },
+        "image_DiD3km": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/demoregen.png",
+            "image_padding": 70,
+            "link": "",
+            "open_in_new_tab": false
+          }
+        },
+        "image_UpVJtU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ddw.png",
+            "image_padding": 30,
+            "link": "",
+            "open_in_new_tab": false
+          }
         }
       },
       "block_order": [
         "image_7i9zqA",
         "image_YDjhhn",
         "image_NQxJFz",
-        "image_WcF9Qr"
+        "image_WcF9Qr",
+        "image_XpMxij",
+        "image_qVPNBL",
+        "image_DiD3km",
+        "image_UpVJtU"
       ],
       "settings": {
         "scroll_direction": "ltr",
