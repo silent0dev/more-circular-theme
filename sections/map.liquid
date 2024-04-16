@@ -15,57 +15,61 @@
 
 {{ 'component-map.css' | asset_url | stylesheet_tag }}
 
-<div class="site-box-container container--fullscreen">
+<div class="site-box-container container--fullscreen box--can-stick remove-sticky-border map-site-box">
 
-  <div class="site-box box--bigger box--typo-big box--center-align box--column-flow box__heading box__map fix-me-with-height">
-  
-    {%- if display_map -%}
-
-			<contact-map class="contact-map-holder" 
-        data-key="{{ section.settings.map_api | escape }}" aria-hidden="true"
-      >
-        <div class="contact-map-object" 
-          id="contact-map-{{ section.id }}"
-          data-address="{{ section.settings.map_address | escape }}" 
-          data-marker="{% if section.settings.map_marker %}{{ section.settings.map_marker | image_url: width: 240 }}{% else %}{% if section.settings.map_style == 'light' %}{{ 'img_marker-dark.png' | asset_url }}{% else %}{{ 'img_marker-light.png' | asset_url }}{% endif %}{% endif %}" 
-          data-style="{{ section.settings.map_style }}" data-zoom="16"
-        ></div>
-
-        <div class="contact-map-address-holder hide" data-aria="hidden">
-          <div class="contact-map-address" style="padding:6px">
-            <p class="text-size--larger" style="margin-bottom:.5em">{{ section.settings.map_address | escape }}</p>
-            <a target="_blank" style="border-bottom:1px solid">{{ 'general.contact_form.map.google_maps_link' | t }}</a>
-          </div>
-        </div>
-
-      </contact-map>
-
-      <script src="{{ 'component-map.js' | asset_url }}" defer></script>
-
-    {%- else -%}
-
-      <span class="site-box-background" aria-hidden="true">
-        {%- if onboarding -%}
-          <span class="onboarding-svg">{{ 'lifestyle-1' | placeholder_svg_tag }}</span>
-        {%- else -%}
-          {%- render 'lazy-image', image: bg_image, id: section.id, sizes: '(max-width: 1024px) and (orientation: portrait) max(100vw, 60vh), (max-width: 768px) max(100vw, 60vh), max(50vw, 100vh)' -%}
-        {%- endif -%}
-      </span> 
-
-    {%- endif -%}
-
-    <div class="map-info">
-
-      {%- unless section.settings.title == blank -%}
-        <{{ section.settings.seo_h_tag }} class="title h4">{{ section.settings.title | escape }}</{{ section.settings.seo_h_tag }}>
-      {%- endunless -%}
-
-      {%- unless section.settings.content == blank -%}
-        <div class="rte">{{ section.settings.content }}</div>
-      {%- endunless -%}
-
+  <div class="site-box box--big lap--box--small-fl-auto box--typo-big box--center-align box--top-align-if-first box--column-flow box__heading" data-order="0">
+    <div class="site-box-content reduce-top-margin-if-first">
+      <div class="map-info">
+        {% for block in section.blocks %}
+          {% if block.type == 'heading' %}
+            <h1 class="title h1">{{ block.settings.heading }}</h1>
+          {% elsif block.type == 'info' %}
+            <div class="map-info-item">
+              <span class="map-info-title">{{ block.settings.heading }}</span>
+              <div class="map-info-rte">{{ block.settings.info }}</div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
+  </div>
+  <div class="site-box box--big lap--box--bigger box--typo-big box--center-align box--column-flow box--no-padding" data-order="1" style="border:none">
+    <div class="site-box-content remove-first-border">
+      {%- if display_map -%}
 
+        <contact-map class="contact-map-holder" 
+          data-key="{{ section.settings.map_api | escape }}" aria-hidden="true"
+        >
+          <div class="contact-map-object" 
+            id="contact-map-{{ section.id }}"
+            data-address="{{ section.settings.map_address | escape }}" 
+            data-marker="{% if section.settings.map_marker %}{{ section.settings.map_marker | image_url: width: 240 }}{% else %}{% if section.settings.map_style == 'light' %}{{ 'img_marker-dark.png' | asset_url }}{% else %}{{ 'img_marker-light.png' | asset_url }}{% endif %}{% endif %}" 
+            data-style="{{ section.settings.map_style }}" data-zoom="16"
+          ></div>
+  
+          <div class="contact-map-address-holder hide" data-aria="hidden">
+            <div class="contact-map-address" style="padding:6px">
+              <p class="text-size--larger" style="margin-bottom:.5em">{{ section.settings.map_address | escape }}</p>
+              <a target="_blank" style="border-bottom:1px solid">{{ 'general.contact_form.map.google_maps_link' | t }}</a>
+            </div>
+          </div>
+  
+        </contact-map>
+  
+        <script src="{{ 'component-map.js' | asset_url }}" defer></script>
+  
+      {%- else -%}
+  
+        <span class="site-box-background" aria-hidden="true">
+          {%- if onboarding -%}
+            <span class="onboarding-svg">{{ 'lifestyle-1' | placeholder_svg_tag }}</span>
+          {%- else -%}
+            {%- render 'lazy-image', image: bg_image, id: section.id, sizes: '(max-width: 1024px) and (orientation: portrait) max(100vw, 60vh), (max-width: 768px) max(100vw, 60vh), max(50vw, 100vh)' -%}
+          {%- endif -%}
+        </span> 
+  
+      {%- endif -%}
+    </div>
   </div>
   
 </div>
@@ -75,18 +79,6 @@
     "name": "t:sections.split-extra-words.sections.map.name",
     "class": "mount-map",
     "settings": [
-      {
-        "type": "text",
-        "id": "title",
-        "label": "t:sections.split-extra-words.settings_schema.headings.title",
-        "default": "Our store"
-      },
-      {
-        "type": "richtext",
-        "id": "content",
-        "label": "t:sections.split-extra-words.sections.map.settings.address_label",
-        "default": "<p>123 Fake St.<br>Vancouver, Canada</p><p>Mon - Fri, 10am - 9pm<br>Saturday, 11am - 4pm<br>Sunday, CLOSED</p>"
-      },
       {
         "type": "header",
         "content": "t:sections.split-extra-words.sections.map.name"
@@ -163,6 +155,39 @@
           }
         ],
         "default": "h3"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "heading",
+        "name": "Heading",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+          }
+        ]
+      },
+      {
+        "type": "info",
+        "name": "Info",
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "info",
+            "label": "Text"
+          }
+        ]
+      },
+      {
+        "type": "@app"
       }
     ],
     "presets": [{

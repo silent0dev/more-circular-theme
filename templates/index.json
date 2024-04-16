@@ -403,6 +403,52 @@
         "custom_background": "#2f2e33",
         "custom_text": "#ffffff"
       }
+    },
+    "map_WJMeGt": {
+      "type": "map",
+      "blocks": {
+        "heading_CiMa4x": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contact"
+          }
+        },
+        "info_cdWUq7": {
+          "type": "info",
+          "settings": {
+            "heading": "Call",
+            "info": "<p><a href=\"tel:+33 456981496\" title=\"tel:+33 456981496\">+33 456981496</a></p>"
+          }
+        },
+        "info_iT6ih3": {
+          "type": "info",
+          "settings": {
+            "heading": "Mail",
+            "info": "<p><a href=\"mailto:hello@morecircular.com\" title=\"mailto:hello@morecircular.com\">hello@morecircular.com</a></p>"
+          }
+        },
+        "info_kwWEjG": {
+          "type": "info",
+          "settings": {
+            "heading": "Address",
+            "info": "<p>Jagershoek 5, 2970 Schilde</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CiMa4x",
+        "info_cdWUq7",
+        "info_iT6ih3",
+        "info_kwWEjG"
+      ],
+      "settings": {
+        "title": "Contact",
+        "content": "<p>123 Fake St.<br/>Vancouver, Canada</p><p>Mon - Fri, 10am - 9pm<br/>Saturday, 11am - 4pm<br/>Sunday, CLOSED</p>",
+        "map_address": "Jagershoek 5, 2970 Schilde",
+        "map_api": "",
+        "map_style": "light",
+        "seo_h_tag": "h1"
+      }
     }
   },
   "order": [
@@ -416,6 +462,7 @@
     "heading_arGm7A",
     "testimonials_UAzaBL",
     "video_popup_JDcFMV",
-    "newsletter_LUFGwd"
+    "newsletter_LUFGwd",
+    "map_WJMeGt"
   ]
 }
