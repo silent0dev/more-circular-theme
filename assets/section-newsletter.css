@@ -1,11 +1,12 @@
 .box__newsletter .site-box-content {
-  width: 50%;
-  margin-inline-start: auto;
-  margin-inline-end: auto;
+  width: 800px;
+  margin-inline-start: 110px;
 }
 @media screen and (max-width: 1024px) {
   .box__newsletter .site-box-content {
     width: 80%;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
   }
 }
 @media screen and (max-width: 768px), screen and (max-width: 1024px) and (orientation: portrait) {
@@ -14,10 +15,25 @@
     padding: 0 var(--site-horizontal-padding);
   }
 }
-.box__newsletter .newsletter-title,
-.box__newsletter .newsletter-form,
+.box__newsletter .newsletter-title {
+  margin-bottom: 20px;
+}
+.box__newsletter .newsletter-form {
+  margin-bottom: 5px;
+}
 .box__newsletter .newsletter-text {
-  margin-bottom: var(--text-spacing);
+  margin-left: 20px;
+}
+@media (max-width: 768px) {
+  .box__newsletter .newsletter-text {
+    margin-left: 0;
+  }
+  .box__newsletter .site-box-content .content {
+    text-align: center;
+  }
+  html[dir=ltr] .newsletter-form .input-group input[type=email], html[dir=ltr] .newsletter-form .input-group input[type=search] {
+    text-align: center;
+  }
 }
 .box__newsletter .content > *:last-child {
   margin-bottom: 0;
@@ -30,7 +46,8 @@
 }
 .newsletter-form .input-group input[type=email], .newsletter-form .input-group input[type=search] {
   flex-grow: 1;
-  border-color: var(--main-text);
+  background-color: rgba(217,217,217, 0.3);
+  border-color: rgba(217,217,217, 0.3);
 }
 html[dir=rtl] .newsletter-form .input-group input[type=email], html[dir=rtl] .newsletter-form .input-group input[type=search] {
   border-top-right-radius: var(--buttons-radius);
@@ -39,6 +56,9 @@ html[dir=rtl] .newsletter-form .input-group input[type=email], html[dir=rtl] .ne
 html[dir=ltr] .newsletter-form .input-group input[type=email], html[dir=ltr] .newsletter-form .input-group input[type=search] {
   border-top-left-radius: var(--buttons-radius);
   border-bottom-left-radius: var(--buttons-radius);
+}
+html[dir=ltr] .newsletter-form .input-group input[type=email]::placeholder, html[dir=ltr] .newsletter-form .input-group input[type=search]::placeholder {
+  color: rgba(255, 255, 255, 0.7);
 }
 .newsletter-form .input-group button[type=submit] {
   flex-shrink: 0;
@@ -52,6 +72,8 @@ html[dir=rtl] .newsletter-form .input-group button[type=submit] {
 html[dir=ltr] .newsletter-form .input-group button[type=submit] {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  color: #ffffff;
+  background-color: #000000;
 }
 @media screen and (max-width: 480px) {
   .newsletter-form .input-group {

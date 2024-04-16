@@ -83,3 +83,15 @@
 .account-menu {
     line-height: 0;
 }
+
+.newsletter-image {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+@media (max-width: 1440px) {
+    .newsletter-image {
+        display: none;
+    }
+}

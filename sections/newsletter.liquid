@@ -5,10 +5,23 @@
 
   {%- render 'custom-colors', id: section.id, background: section.settings.custom_background, text: section.settings.custom_text -%}
 
+  {% style %}
+   #section-{{ section.id }} {
+    margin: 75px auto;
+    max-width: calc(100% - var(--box-smaller-padding) * 2);
+   }
+  {% endstyle %}
+
   <div id="section-{{ section.id }}" class="site-box-container container--fullscreen">
 
-    <div id="block-{{ section.id }}" class="site-box box--small-fl-auto lap--box--small-fl-auto box__newsletter box--typo-big box--center-align box--text-align-center box--column-flow" data-order="0" style="min-height:50vh">
+    <div id="block-{{ section.id }}" class="site-box box--small-fl-auto lap--box--small-fl-auto box__newsletter box--typo-big box--center-align box--column-flow" data-order="0" style="min-height:50vh">
 
+      {% unless section.settings.image == blank %}
+        {%- liquid
+          assign sizes = 'sizes="(max-width: 948px) calc(100vw - 20px), (min-width: 949px) and (max-width: 1023px) calc(100vw - 200px), 25vw"'
+          render 'lazy-image', image: section.settings.image, type: 'image', class: 'newsletter-image', sizes: sizes
+        -%}
+      {% endunless %}
       <div class="site-box-content">
         <div class="content">
 
@@ -17,7 +30,7 @@
             {%- case block.type -%}
 
               {%- when 'heading' -%}
-                <{{ block.settings.seo_h_tag }} class="newsletter-title h3" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</{{ block.settings.seo_h_tag }}>
+                <{{ block.settings.seo_h_tag }} class="newsletter-title h2" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</{{ block.settings.seo_h_tag }}>
 
               {%- when 'paragraph' -%}
                 <div class="newsletter-text rte" {{ block.shopify_attributes }}>{{ block.settings.paragraph }}</div>
@@ -59,6 +72,11 @@
     "name": "t:sections.newsletter.name",
     "class": "mount-newsletter section-w-margin",
     "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
       {
         "type": "header",
         "content": "t:sections.split-extra-words.settings_schema.colors.headings.custom_colors"
