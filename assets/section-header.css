@@ -119,6 +119,8 @@ html[dir=ltr] .site-header .logo img {
 }
 .site-menu-handle svg {
   transition: transform 150ms linear;
+  width: 19px;
+  height: auto;
 }
 body.sidebar-move .site-menu-handle {
   opacity: 0.08;

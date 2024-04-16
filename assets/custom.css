@@ -76,3 +76,10 @@
         height: 100%;
     }
 }
+
+.site-menu-handle.site-account-handle {
+    display: flex;
+}
+.account-menu {
+    line-height: 0;
+}
