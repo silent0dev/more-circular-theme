@@ -98,6 +98,7 @@
       "settings": {
         "title": "Lighting Highlights",
         "open_first": true,
+        "image": "shopify://shop_images/cluster_small_5_black_1.png",
         "custom_background": "rgba(0,0,0,0)",
         "custom_text": "#2d2d2d",
         "seo_h_tag": "h1"
