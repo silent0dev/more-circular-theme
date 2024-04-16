@@ -34,6 +34,17 @@
                   {%- endfor -%}
                 </nav>
 
+                {% if block.settings.enable_social %}
+                  {% if block.settings.social_title != blank %}
+                    {%- if block.settings.title -%}
+                      <{{ section.settings.seo_h_tag }} class="title h6">{{ block.settings.social_title | escape }}</{{ section.settings.seo_h_tag }}>
+                    {%- endif -%}
+                  {% endif %}
+                  <nav class="text-size--smaller">
+                    {%- render 'social-icons', type: 'footer' -%}
+                  </nav>
+                {% endif %}
+
               {%- when 'social' -%}
                 <nav class="text-size--smaller">
                   {%- render 'social-icons', type: 'footer' -%}
@@ -258,6 +269,18 @@
             "label": "t:sections.split-extra-words.sections.footer.blocks.menu.label",
             "default": "footer",
             "info": "t:sections.footer.blocks.menus.settings.menu_1.info"
+          },
+          {
+            "type": "checkbox",
+            "id": "enable_social",
+            "label": "Enable Socail Links",
+            "default": false
+          },
+          {
+            "type": "text",
+            "id": "social_title",
+            "label": "t:sections.footer.blocks.text.settings.title.label",
+            "default": "Follow"
           }
         ]
       },

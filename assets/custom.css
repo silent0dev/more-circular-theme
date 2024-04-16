@@ -211,3 +211,27 @@
         justify-content: flex-start;
     }
 }
+
+@media (min-width: 769px) {
+    .footer-content, .footer-menu {
+        font-size: 18px;
+        line-height: 29px;
+    }
+    .footer-menu {
+        margin-top: 3px;
+    }
+    .site-footer .footer-top {
+        padding: 130px calc(var(--box-big-padding) - var(--site-horizontal-padding)) !important;
+    }
+    .site-footer .footer-bottom {
+        padding: 30px calc(var(--box-big-padding) - var(--site-horizontal-padding)) 60px !important;
+    }
+}
+
+.footer-menu + .title {
+    margin-top: 35px;
+}
+
+.social-links {
+    display: flex;
+}
