@@ -8,45 +8,42 @@
         "text": {
           "type": "text",
           "settings": {
-            "title": "Contact information",
-            "content": "<p>Write a short statement about your brand.</p>",
-            "size": "text-size--large"
+            "title": "Vision",
+            "content": "<p>More Circular will be a well known brand that stands for sustainability, style and fun. We will have a highly talented and creative team that loves to make a positive impact and make people happy.</p>",
+            "size": ""
           }
         },
         "menu-1": {
           "type": "menu",
           "settings": {
-            "title": "Quick links",
-            "menu": "footer"
+            "title": "Collections",
+            "menu": "collections",
+            "enable_social": true,
+            "social_title": "Follow"
           }
         },
         "menu-2": {
           "type": "menu",
           "settings": {
             "title": "Quick links",
-            "menu": "footer"
-          }
-        },
-        "social": {
-          "type": "social",
-          "settings": {
-            "title": "Follow us"
+            "menu": "quick-links",
+            "enable_social": false,
+            "social_title": "Follow"
           }
         }
       },
       "block_order": [
         "text",
         "menu-1",
-        "menu-2",
-        "social"
+        "menu-2"
       ],
       "settings": {
         "show_payment_icons": true,
         "show_locale_selector": true,
         "show_country_selector": true,
-        "enable_follow_on_shop": true,
-        "custom_background": "rgba(0,0,0,0)",
-        "custom_text": "rgba(0,0,0,0)",
+        "enable_follow_on_shop": false,
+        "custom_background": "#242526",
+        "custom_text": "#ffffff",
         "seo_h_tag": "h4"
       }
     }

@@ -104,6 +104,10 @@
     "cart_notes_enable": true,
     "cart_image_ratio": "1",
     "cart_image_border": "#dcdbe4",
+    "social_instagram": "https://www.instagram.com/blushdesignapp/",
+    "social_youtube": "https://www.youtube.com/user/shopify",
+    "social_twitter": "https://twitter.com/blushdesignapp",
+    "social_linkedin": "https://www.linkedin.com/company/blush-design/",
     "content_for_index": [
 
     ],
