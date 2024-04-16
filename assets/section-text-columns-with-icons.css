@@ -6,10 +6,10 @@
 .text-w-icon {
   display: flex;
   flex-wrap: wrap;
-  padding-inline-start: 5%;
-  padding-inline-end: 5%;
-  align-items: center;
   margin: 0 !important;
+  text-align: left;
+  min-height: 0;
+  padding: 0;
 }
 .text-w-icon[data-size="1"] .text-w-icon__container {
   width: 100%;
@@ -26,10 +26,16 @@
 .text-w-icon[data-size="3"] .text-w-icon__container {
   width: 33.33%;
 }
+.text-w-icon[data-size="4"] .text-w-icon__container {
+  width: 25%;
+}
 @media screen and (max-width: 768px), screen and (max-width: 1024px) and (orientation: portrait) {
   .text-w-icon[data-size="3"] .text-w-icon__container {
     width: 100%;
     margin-bottom: 80px;
+  }
+  .text-w-icon[data-size="4"] .text-w-icon__container {
+    width: 100%;
   }
 }
 .text-w-icon .text-w-icon__container:last-child {
@@ -40,7 +46,11 @@
 }
 
 .text-w-icon__container {
-  padding: 0 5%;
+  padding: 55px 80px;
+}
+
+.text-w-icon__container + .text-w-icon__container {
+  border-left: 1px solid #47484A;
 }
 
 .text-w-icon__icon {
@@ -65,7 +75,9 @@
 
 @media screen and (max-width: 768px), screen and (max-width: 1024px) and (orientation: portrait) {
   .text-w-icon__container {
-    padding: 0 25px;
+    padding: 25px;
+    border-bottom: 1px solid #47484A;
+    text-align: center;
   }
   .text-w-icon:first-child {
     padding-inline-start: 0;
@@ -73,4 +85,8 @@
   .text-w-icon:last-child {
     padding-inline-end: 0;
   }
+}
+
+.text-w-icon__rte {
+  font-size: 18px;
 }

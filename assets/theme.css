@@ -10,6 +10,10 @@
 /*
  *  1.1. Reset
 */
+@font-face {
+  font-family: PlusJakartaSans;
+  src: url("https://cdn.shopify.com/s/files/1/0534/0010/9217/files/PlusJakartaSans-SemiBold.otf?v=1713252258") format("opentype");
+}
 input, :before, :after, * {
   box-sizing: border-box;
 }
@@ -293,7 +297,7 @@ body {
 
 h1, h2, h3, h4, h5, h6,
 .h0, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: var(--font-stack-headings);
+  font-family: PlusJakartaSans;
   font-weight: var(--font-weight-headings);
   font-style: var(--font-style-headings);
   line-height: var(--base-headings-line);
@@ -386,7 +390,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h4, .h4 {
-  font-size: calc(20px / 60 * var(--base-headings-size) + 0px);
+  font-size: 24px;
 }
 
 h5, .h5 {

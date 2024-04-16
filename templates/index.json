@@ -216,12 +216,83 @@
         "speed": 100,
         "pause_on_hover": true
       }
+    },
+    "heading_Vtj9Tb": {
+      "type": "heading",
+      "blocks": {
+        "heading_RDh8Ty": {
+          "type": "heading",
+          "settings": {
+            "heading": "100% Customer Satisfaction",
+            "heading_size": "h1",
+            "seo_h_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_RDh8Ty"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "custom_background": "#222326",
+        "custom_text": "#ffffff"
+      }
+    },
+    "text_columns_with_icons_DyUiyb": {
+      "type": "text-columns-with-icons",
+      "blocks": {
+        "text_icon_tHzmTd": {
+          "type": "text-icon",
+          "settings": {
+            "title": "Customer Support",
+            "body": "<p>We are dedicated to a great result and experience and are here for support.</p>",
+            "label": "",
+            "link": "",
+            "select_icon": "delivery",
+            "custom_icon": "shopify://shop_images/customer-support.png"
+          }
+        },
+        "text_icon_aMRLjk": {
+          "type": "text-icon",
+          "settings": {
+            "title": "Free Shipping",
+            "body": "<p>Every order ships for free within EU.</p>",
+            "label": "",
+            "link": "",
+            "select_icon": "time-limit",
+            "custom_icon": "shopify://shop_images/delivery-truck.png"
+          }
+        },
+        "text_icon_fz38Yy": {
+          "type": "text-icon",
+          "settings": {
+            "title": "Try it for 100 Days",
+            "body": "<p>If the Archy pendants have not stolen your heart in 100 days, send it back for a full refund.</p>",
+            "label": "",
+            "link": "",
+            "select_icon": "store",
+            "custom_icon": "shopify://shop_images/try-it-for-100days.png"
+          }
+        }
+      },
+      "block_order": [
+        "text_icon_tHzmTd",
+        "text_icon_aMRLjk",
+        "text_icon_fz38Yy"
+      ],
+      "settings": {
+        "custom_background": "#222326",
+        "custom_text": "#ffffff",
+        "seo_h_tag": "h3"
+      }
     }
   },
   "order": [
     "16372498804121dda9",
     "faq_kYpKfT",
     "heading_ytJmKC",
-    "scrolling_images_iEQh7g"
+    "scrolling_images_iEQh7g",
+    "heading_Vtj9Tb",
+    "text_columns_with_icons_DyUiyb"
   ]
 }
