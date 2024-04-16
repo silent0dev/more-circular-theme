@@ -360,6 +360,16 @@
         "mobile_layout": true,
         "seo_h_tag": "h2"
       }
+    },
+    "video_popup_JDcFMV": {
+      "type": "video-popup",
+      "settings": {
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_object": "shopify://files/videos/landscape_ARCHY_DEF_Fcbk_Insta.mp4",
+        "image": "shopify://shop_images/video-back.png",
+        "custom_text": "rgba(0,0,0,0)",
+        "custom_overlay": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
@@ -371,6 +381,7 @@
     "heading_Vtj9Tb",
     "text_columns_with_icons_DyUiyb",
     "heading_arGm7A",
-    "testimonials_UAzaBL"
+    "testimonials_UAzaBL",
+    "video_popup_JDcFMV"
   ]
 }

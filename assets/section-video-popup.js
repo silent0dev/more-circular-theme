@@ -17,6 +17,10 @@ if ( typeof VideoModalPopup !== 'function' ) {
 							case "vimeo":
 								instance.element().querySelector('.js-vimeo').contentWindow.postMessage('{"method":"play"}', '*');
 								break;
+							case "video":
+								console.log(instance.element().querySelector('.js-video'));
+								instance.element().querySelector('.js-video').play();
+								break;
 						}
 					}).bind(this, instance), 500);
 				}
