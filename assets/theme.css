@@ -1472,6 +1472,8 @@ toggle-tab:last-of-type {
 }
 .toggle__title .symbol {
   flex-shrink: 0;
+  width: 17px;
+  height: auto;
 }
 .toggle__title .symbol.symbol--plus {
   display: block;
@@ -1481,7 +1483,6 @@ toggle-tab:last-of-type {
 }
 .toggle__title svg * {
   transition: all 100ms linear;
-  fill: var(--main-text);
 }
 toggle-tab.opened .toggle__title {
   cursor: pointer;
