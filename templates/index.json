@@ -313,6 +313,53 @@
         "custom_background": "rgba(0,0,0,0)",
         "custom_text": "rgba(0,0,0,0)"
       }
+    },
+    "testimonials_UAzaBL": {
+      "type": "testimonials",
+      "blocks": {
+        "text_xNT4ct": {
+          "type": "text",
+          "settings": {
+            "quote_content": "<p>Wat een eye-catcher. Tot in de puntjes geregeld, fantastische communicatie en service van Marten. Mooi en modern design. Je kan zelf de lengtes kiezen, kleur,...</p>",
+            "quote_author": "Michiel",
+            "quote_caption": "Customer",
+            "quote_avatar": "shopify://shop_images/Ellipse_27.png"
+          }
+        },
+        "text_U8xpze": {
+          "type": "text",
+          "settings": {
+            "quote_content": "<p>Wat een eye-catcher. Tot in de puntjes geregeld, fantastische communicatie en service van Marten. Mooi en modern design. Je kan zelf de lengtes kiezen, kleur,...</p>",
+            "quote_author": "Michiel",
+            "quote_caption": "Customer",
+            "quote_avatar": "shopify://shop_images/Ellipse_28.png"
+          }
+        },
+        "text_HyimmQ": {
+          "type": "text",
+          "settings": {
+            "quote_content": "<p>Wat een eye-catcher. Tot in de puntjes geregeld, fantastische communicatie en service van Marten. Mooi en modern design. Je kan zelf de lengtes kiezen, kleur,...</p>",
+            "quote_author": "Michiel",
+            "quote_caption": "Customer",
+            "quote_avatar": "shopify://shop_images/Ellipse_29.png"
+          }
+        }
+      },
+      "block_order": [
+        "text_xNT4ct",
+        "text_U8xpze",
+        "text_HyimmQ"
+      ],
+      "settings": {
+        "title": "Testimonials",
+        "subtitle": "Your client",
+        "image": "shopify://shop_images/Group_1171275876.png",
+        "show_avatars": true,
+        "custom_background": "rgba(0,0,0,0)",
+        "custom_text": "rgba(0,0,0,0)",
+        "mobile_layout": true,
+        "seo_h_tag": "h2"
+      }
     }
   },
   "order": [
@@ -323,6 +370,7 @@
     "heading_6AWPXH",
     "heading_Vtj9Tb",
     "text_columns_with_icons_DyUiyb",
-    "heading_arGm7A"
+    "heading_arGm7A",
+    "testimonials_UAzaBL"
   ]
 }
