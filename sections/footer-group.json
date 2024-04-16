@@ -2,83 +2,6 @@
   "type": "footer",
   "name": "t:sections.refactor_words.labels.footer_group",
   "sections": {
-    "text-columns-with-icons": {
-      "type": "text-columns-with-icons",
-      "blocks": {
-        "icon-1": {
-          "type": "text-icon",
-          "settings": {
-            "title": "Shipping",
-            "body": "<p>Share some useful information about shipping, returns or discounts.</p>",
-            "label": "",
-            "link": "",
-            "select_icon": "earth-globe"
-          }
-        },
-        "icon-2": {
-          "type": "text-icon",
-          "settings": {
-            "title": "Returns",
-            "body": "<p>Share some useful information about shipping, returns or discounts.</p>",
-            "label": "",
-            "link": "",
-            "select_icon": "earth-globe"
-          }
-        },
-        "icon-3": {
-          "type": "text-icon",
-          "settings": {
-            "title": "Pickup",
-            "body": "<p>Share some useful information about shipping, returns or discounts.</p>",
-            "label": "",
-            "link": "",
-            "select_icon": "earth-globe"
-          }
-        }
-      },
-      "block_order": [
-        "icon-1",
-        "icon-2",
-        "icon-3"
-      ],
-      "settings": {
-        "custom_background": "rgba(0,0,0,0)",
-        "custom_text": "rgba(0,0,0,0)",
-        "seo_h_tag": "h3"
-      }
-    },
-    "newsletter": {
-      "type": "newsletter",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Subscribe to our newsletter",
-            "seo_h_tag": "h2"
-          }
-        },
-        "email_form": {
-          "type": "email_form",
-          "settings": {
-          }
-        },
-        "paragraph": {
-          "type": "paragraph",
-          "settings": {
-            "paragraph": "<p>Be the first to know about new collections and exclusive offers.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "email_form",
-        "paragraph"
-      ],
-      "settings": {
-        "custom_background": "rgba(0,0,0,0)",
-        "custom_text": "rgba(0,0,0,0)"
-      }
-    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -129,8 +52,6 @@
     }
   },
   "order": [
-    "text-columns-with-icons",
-    "newsletter",
     "footer"
   ]
 }

@@ -1,0 +1,5 @@
+.heading-site-box.only-has-heading .box--small-fl-auto {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    min-height: auto !important;
+}

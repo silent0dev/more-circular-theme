@@ -5,10 +5,19 @@
     
     {% style %}
       #element-{{ section.id }} .scrolling-images {
-        width: calc({{ section.blocks.size }} * 25%);
+        width: calc({{ section.blocks.size }} * 250px);
       }
       #element-{{ section.id }} .scrolling-images .box--small {
-        width: calc(100% / {{ section.blocks.size }});
+        width: 250px;
+      }
+
+      @media (max-width: 768px) {
+        #element-{{ section.id }} .scrolling-images {
+          width: calc({{ section.blocks.size }} * 150px);
+        }
+        #element-{{ section.id }} .scrolling-images .box--small {
+          width: 150px;
+        }
       }
     {% endstyle %}
 
