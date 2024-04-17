@@ -11,7 +11,8 @@
             "subtitle": "",
             "button_label": "Explore All",
             "button_link": "#",
-            "image": "shopify://shop_images/slideshow-1.png",
+            "image": "shopify://shop_images/slideshow1.png",
+            "mobile_image": "shopify://shop_images/slideshow-1.png",
             "seo_h_tag": "h1"
           }
         },
@@ -23,7 +24,8 @@
             "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
             "button_label": "Explore All",
             "button_link": "#",
-            "image": "shopify://shop_images/slideshow-2.png",
+            "image": "shopify://shop_images/sh2.png",
+            "mobile_image": "shopify://shop_images/slideshow-2.png",
             "seo_h_tag": "h1"
           }
         },
@@ -35,7 +37,8 @@
             "subtitle": "Include various promotions and flash sales",
             "button_label": "Explore All",
             "button_link": "#",
-            "image": "shopify://shop_images/slideshow-3.png",
+            "image": "shopify://shop_images/sh3.png",
+            "mobile_image": "shopify://shop_images/slideshow-3.png",
             "seo_h_tag": "h1"
           }
         }
@@ -46,7 +49,7 @@
         "1637249880c19b891c-1"
       ],
       "settings": {
-        "desktop_layout": "split",
+        "desktop_layout": "full",
         "desktop_image_positioning": "image-on-left",
         "desktop_text": "rgba(0,0,0,0)",
         "desktop_background": "#ebebed",
@@ -443,7 +446,7 @@
       ],
       "settings": {
         "map_address": "Jagershoek 5, 2970 Schilde",
-        "map_api": "",
+        "map_api": "AIzaSyAx8VZZ738cGTys21QYZWhflYgUeK3z9OY",
         "map_style": "light",
         "seo_h_tag": "h1"
       }

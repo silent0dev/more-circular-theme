@@ -235,3 +235,13 @@
 .social-links {
     display: flex;
 }
+
+.split-slider {
+    border-bottom: 1px solid var(--grid-borders);
+}
+
+@media (min-width: 769px) {
+    .split-slider .box__heading .site-box-content {
+        max-width: 50%;
+    }
+}

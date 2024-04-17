@@ -1824,12 +1824,12 @@ html[dir=ltr] .site-box.box--text-align-left {
   padding-inline-end: var(--box-big-padding);
 }
 .box__heading.box--typo-big .title:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: var(--text-spacing);
 }
 .box__heading.box--typo-big .subtitle:not(:last-child),
 .box__heading.box--typo-big .tagline:not(:last-child) {
   display: block;
-  margin-bottom: 13px;
+  margin-bottom: var(--text-spacing);
 }
 .box__heading .button:not(:first-child) {
   margin-top: 5px;
