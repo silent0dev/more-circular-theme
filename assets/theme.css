@@ -1904,16 +1904,17 @@ html[dir=ltr] .site-box.box--text-align-left {
     letter-spacing: -5px;
     position: relative;
     display: inline-block;
+    transform: translateY(5px);
   }
   .faq-header .title::before {
     content: "";
-    width: calc(100% + var(--box-smaller-padding));
-    background: var(--main-background);
     position: absolute;
-    right: 0;
-    bottom: -5px;
-    height: 5px;
+    left: calc(100% - 10px);
+    bottom: 5px;
+    height: 2px;
+    width: calc(100vw - 100% - var(--box-smaller-padding));
     z-index: 99;
+    background: linear-gradient(to right, #A9ABB0 76%, #4C4D50);
   }
   .faq-header {
     padding-top: 140px;

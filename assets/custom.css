@@ -244,4 +244,8 @@
     .split-slider .box__heading .site-box-content {
         max-width: 50%;
     }
+
+    .faq-box .site-box:before {
+        display: none;
+    }
 }
