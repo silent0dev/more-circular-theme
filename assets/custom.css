@@ -249,3 +249,33 @@
         display: none;
     }
 }
+
+.calendly-showroom-visit {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 127%;
+}
+
+.calendly-showroom-visit iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-position: center;
+    object-fit: contain;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .map-site-box .site-box:last-of-type .site-box-content {
+        padding-bottom: 100%;
+        height: 0;
+    }
+
+    .map-site-box .box__heading.box--typo-big {
+        padding-inline-start: var(--site-horizontal-padding);
+        padding-inline-end: var(--site-horizontal-padding);
+    }
+}
