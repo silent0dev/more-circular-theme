@@ -112,7 +112,7 @@
     font-size: 24px;
     margin: 0;
     line-height: 1.1;
-    letter-spacing: -3%;
+    letter-spacing: -1px;
 }
 
 .map-site-box .box__heading {

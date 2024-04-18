@@ -60,6 +60,16 @@
         "heading_size": "h1"
       }
     },
+    "video_popup_JDcFMV": {
+      "type": "video-popup",
+      "settings": {
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_object": "shopify://files/videos/landscape_ARCHY_DEF_Fcbk_Insta.mp4",
+        "image": "shopify://shop_images/video-back.png",
+        "custom_text": "rgba(0,0,0,0)",
+        "custom_overlay": "rgba(0,0,0,0)"
+      }
+    },
     "faq_kYpKfT": {
       "type": "faq",
       "blocks": {
@@ -257,8 +267,7 @@
           "settings": {
             "title": "Customer Support",
             "body": "<p>We are dedicated to a great result and experience and are here for support.</p>",
-            "label": "",
-            "link": "",
+            "link": "shopify://pages/contact-us",
             "select_icon": "delivery",
             "custom_icon": "shopify://shop_images/customer-support.png"
           }
@@ -268,8 +277,7 @@
           "settings": {
             "title": "Free Shipping",
             "body": "<p>Every order ships for free within EU.</p>",
-            "label": "",
-            "link": "",
+            "link": "shopify://policies/shipping-policy",
             "select_icon": "time-limit",
             "custom_icon": "shopify://shop_images/delivery-truck.png"
           }
@@ -279,8 +287,7 @@
           "settings": {
             "title": "Try it for 100 Days",
             "body": "<p>If the Archy pendants have not stolen your heart in 100 days, send it back for a full refund.</p>",
-            "label": "",
-            "link": "",
+            "link": "shopify://policies/refund-policy",
             "select_icon": "store",
             "custom_icon": "shopify://shop_images/try-it-for-100days.png"
           }
@@ -290,8 +297,7 @@
           "settings": {
             "title": "Easy Installation",
             "body": "<p>Each set comes assembled and installation is easy with the provided instructions.</p>",
-            "label": "",
-            "link": "",
+            "link": "shopify://blogs/news",
             "select_icon": "earth-globe",
             "custom_icon": "shopify://shop_images/easy-installation.png"
           }
@@ -362,16 +368,6 @@
         "custom_text": "rgba(0,0,0,0)",
         "mobile_layout": true,
         "seo_h_tag": "h2"
-      }
-    },
-    "video_popup_JDcFMV": {
-      "type": "video-popup",
-      "settings": {
-        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "video_object": "shopify://files/videos/landscape_ARCHY_DEF_Fcbk_Insta.mp4",
-        "image": "shopify://shop_images/video-back.png",
-        "custom_text": "rgba(0,0,0,0)",
-        "custom_overlay": "rgba(0,0,0,0)"
       }
     },
     "newsletter_LUFGwd": {
@@ -508,6 +504,7 @@
   },
   "order": [
     "16372498804121dda9",
+    "video_popup_JDcFMV",
     "faq_kYpKfT",
     "heading_ytJmKC",
     "scrolling_images_iEQh7g",
@@ -516,7 +513,6 @@
     "text_columns_with_icons_DyUiyb",
     "heading_arGm7A",
     "testimonials_UAzaBL",
-    "video_popup_JDcFMV",
     "newsletter_LUFGwd",
     "map_WJMeGt",
     "scrolling_text_with_image_hmXUzR"

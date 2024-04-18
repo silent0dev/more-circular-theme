@@ -6,13 +6,23 @@
   {%- render 'custom-colors', id: section.id, background: section.settings.custom_background, text: section.settings.custom_text -%}
 
   {% style %}
+  #shopify-section-{{ section.id }} {
+    border-top: 1px solid var(--grid-borders);
+  }
+
    #section-{{ section.id }} {
     margin: 75px auto;
     max-width: calc(100% - var(--box-big-padding) * 2);
    }
+
+   @media (max-width: 768px) {
+    #section-{{ section.id }} {
+      max-width: calc(100% - var(--box-smaller-padding) * 2);
+    }
+   }
   {% endstyle %}
 
-  <div id="section-{{ section.id }}" class="site-box-container container--fullscreen">
+  <div id="section-{{ section.id }}" class="site-box-container container--fullscreen newsletter-section">
 
     <div id="block-{{ section.id }}" class="site-box box--small-fl-auto lap--box--small-fl-auto box__newsletter box--typo-big box--center-align box--column-flow" data-order="0" style="min-height:50vh">
 

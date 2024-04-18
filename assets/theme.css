@@ -1920,9 +1920,6 @@ html[dir=ltr] .site-box.box--text-align-left {
     padding-top: 140px;
     padding-bottom: 0;
   }
-  .faq-box .faq-content {
-    padding-top: 0;
-  }
 }
 .box__text .rte + .heading {
   margin-top: 1em;
