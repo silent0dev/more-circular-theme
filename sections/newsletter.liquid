@@ -47,7 +47,7 @@
 
               {%- when 'email_form' -%}
 
-                <div class="newsletter-form" {{ block.shopify_attributes }}>
+                {% comment %} <div class="newsletter-form" {{ block.shopify_attributes }}>
                   {%- form 'customer', id: 'newsletter-section', class: 'newsletter-form' -%}
                     {%- render 'form-errors', form: form -%}
                     {%- if form.posted_successfully? -%}
@@ -62,7 +62,8 @@
                         <input type="hidden" name="contact[tags]" value="newsletter">
                     {%- endif -%}
                   {%- endform -%}
-                </div>
+                </div> {% endcomment %}
+                <div class="klaviyo-form-RcePyi"></div>
 
             {%- endcase -%}
 
