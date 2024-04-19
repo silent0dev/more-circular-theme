@@ -332,3 +332,127 @@
         height: 45px !important;
     }
 }
+
+/* Collection Submenu */
+
+.collection-submenu {
+    padding: var(--header-padding) var(--site-horizontal-padding);
+    display: block;
+}
+
+.collection-submenu__products:not(.active) {
+    display: none;
+}
+
+.collection-submenu__heading:not(.active) {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.collection-submenu__tabs, .collection-submenu__links {
+    display: flex;
+}
+
+.collection-submenu__heading {
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.collection-submenu__heading:hover {
+    color: #000000;
+}
+
+.collection-submenu__heading:first-of-type {
+    margin-left: 0;
+}
+
+.collection-submenu__products {
+    display: flex;
+    margin-top: 20px;
+}
+
+.collection-submenu__product-item {
+    margin-left: 10px;
+    width: 200px;
+    text-align: center;
+    position: relative;
+}
+
+.collection-submenu__product-item:first-of-type {
+    margin-left: 0;
+}
+
+.collection-submenu__product-image {
+    position: relative;
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.collection-submenu__product-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s;
+}
+
+.collection-submenu__product-item:hover .collection-submenu__product-image img:first-of-type {
+    display: none;
+}
+
+.collection-submenu__product-item:not(:hover) .collection-submenu__product-image img:last-of-type {
+    display: none;
+}
+
+.collection-submenu__product-item:hover img {
+    scale: 1.05;
+}
+
+.collection-submenu__product-link {
+    font-size: 14px;
+    display: block;
+    margin-top: 16px;
+}
+
+.collection-submenu__product-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.collection-submenu__links {
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.collection-submenu__links::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.collection-submenu__links::-webkit-scrollbar
+{
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.collection-submenu__links::-webkit-scrollbar-thumb
+{
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #000000;
+  cursor: pointer;
+}

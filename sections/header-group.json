@@ -47,6 +47,47 @@
         "show_country_selector": false
       }
     },
+    "collection_submenu_gc8LYU": {
+      "type": "collection-submenu",
+      "blocks": {
+        "collection_CgtQKH": {
+          "type": "collection",
+          "settings": {
+            "label": "Cluster Set Archy",
+            "collection": "archy-cluster-set"
+          }
+        },
+        "collection_tLyQfK": {
+          "type": "collection",
+          "settings": {
+            "label": "Single Archy",
+            "collection": "pending-archy"
+          }
+        },
+        "collection_3RYxq6": {
+          "type": "collection",
+          "settings": {
+            "label": "Rail Set Archy",
+            "collection": "archy-railset"
+          }
+        },
+        "collection_NiTTCF": {
+          "type": "collection",
+          "settings": {
+            "label": "Table Archy",
+            "collection": "comfy-archy"
+          }
+        }
+      },
+      "block_order": [
+        "collection_CgtQKH",
+        "collection_tLyQfK",
+        "collection_3RYxq6",
+        "collection_NiTTCF"
+      ],
+      "settings": {
+      }
+    },
     "breadcrumb": {
       "type": "breadcrumb",
       "settings": {
@@ -56,6 +97,7 @@
   "order": [
     "announcement",
     "header",
+    "collection_submenu_gc8LYU",
     "breadcrumb"
   ]
 }

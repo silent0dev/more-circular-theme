@@ -1,0 +1,74 @@
+{% if section.blocks.size > 0 %}
+    <collection-submenu class="collection-submenu element--hide-on-small">
+      <div class="collection-submenu__tabs">
+        {% for block in section.blocks %}
+          {% assign label = block.settings.label %}
+          <a href="#" class="collection-submenu__heading {% if forloop.first %}active{% endif %}" data-tab="{{ label | handle }}">
+            <span class="underline-animation">
+              {% if label != blank %}
+                {{ label }}
+              {% else %}
+                {{ collection.title }}
+              {% endif %}
+            </span>
+          </a>
+        {% endfor %}
+      </div>
+      <div class="collection-submenu__links">
+        {% for block in section.blocks %}
+          {% assign collection = block.settings.collection %}
+          {% assign label = block.settings.label %}
+          <div class="collection-submenu__products {% if forloop.first %}active{% endif %}" data-tab="{{ label | handle }}">
+            {% for product in collection.products %}
+              <div class="collection-submenu__product-item">
+                <div class="collection-submenu__product-image">
+                    {{ product.featured_image | image_url: width: 250 | image_tag }}
+                    {% if product.images.size > 1 %}
+                        {{ product.images[1] | image_url: width: 250 | image_tag }}
+                    {% endif %}
+                </div>
+                <a class="collection-submenu__product-link" href="{{ product.url }}">
+                  <span class="underline-animation">
+                    {{ product.title }}
+                  </span>
+                </a>
+              </div>
+            {% endfor %}
+          </div>
+        {% endfor %}
+      </div>
+    </collection-submenu>
+  {% endif %}
+
+  {% schema %}
+  {
+    "name": "Collection Submenu",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "collection",
+        "name": "Collection",
+        "settings": [
+          {
+            "type": "text",
+            "id": "label",
+            "label": "Label"
+          },
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "Collection"
+          }
+        ]
+      }
+    ],
+    "enabled_on": {
+        "groups": ["header"]
+    },
+    "presets": [
+        {
+            "name": "Collection Submenu"
+        }
+    ]
+  }
+{% endschema %}
