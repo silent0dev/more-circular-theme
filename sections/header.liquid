@@ -352,6 +352,24 @@ data-sticky="{{ section.settings.menu_sticky }}">
         "default": false
       }
     ],
+    "blocks": [
+      {
+        "type": "collection",
+        "name": "Collection",
+        "settings": [
+          {
+            "type": "text",
+            "id": "label",
+            "label": "Label"
+          },
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "Collection"
+          }
+        ]
+      }
+    ],
 		"enabled_on": {
 			"groups": ["header"]
 		}

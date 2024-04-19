@@ -336,8 +336,9 @@
 /* Collection Submenu */
 
 .collection-submenu {
-    padding: var(--header-padding) var(--site-horizontal-padding);
+    padding: 0 var(--site-horizontal-padding);
     display: block;
+    width: 100%;
 }
 
 .collection-submenu__products:not(.active) {

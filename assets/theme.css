@@ -2059,7 +2059,18 @@ html[dir=ltr] .horizontal-right {
 }
 @media screen and (min-width: 769px) {
   .element--hide-on-desk {
-    display: none;
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .element--hide-on-medium {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .element--hide-on-large {
+    display: none !important;
   }
 }
 
