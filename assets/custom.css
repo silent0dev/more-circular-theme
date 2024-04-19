@@ -252,7 +252,7 @@
 
 .calendly-showroom-visit {
     position: relative;
-    width: 100%;
+    width: calc(100% - 20px);
     height: 0;
     padding-bottom: 127%;
 }
@@ -277,5 +277,58 @@
     .map-site-box .box__heading.box--typo-big {
         padding-inline-start: var(--site-horizontal-padding);
         padding-inline-end: var(--site-horizontal-padding);
+    }
+
+    .calendly-showroom-visit {
+        width: 100%;
+    }
+}
+
+.klaviyo-form [component="[object Object]"] {
+    background-color: transparent !important;
+}
+
+.klaviyo-form * {
+    font-family: "DM Sans" !important;
+}
+
+.klaviyo-form input::placeholder {
+    color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.klaviyo-form button {
+    padding: 0 30px !important;
+}
+
+@media (min-width: 769px) {
+    .klaviyo-form input {
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+    
+    .klaviyo-form button {
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .klaviyo-form [data-testid="form-row"] {
+        flex-wrap: wrap !important;
+    }
+
+    .klaviyo-form [component="[object Object]"] {
+        width: 100% !important;
+        flex: auto !important;
+        justify-content: center !important;
+        margin-top: 20px;
+    }
+    
+    .klaviyo-form > .needsclick {
+        min-height: auto !important;
+    }
+
+    .klaviyo-form input, .klaviyo-form button {
+        height: 45px !important;
     }
 }
