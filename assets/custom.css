@@ -345,7 +345,7 @@
 }
 
 .collection-submenu__heading:not(.active) {
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .collection-submenu__tabs, .collection-submenu__links {
